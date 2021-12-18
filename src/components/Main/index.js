@@ -118,7 +118,7 @@ export function Main() {
       <S.Firstmain back={background.url}>
         <div>
           <img src={logo.url} alt=" logo " />
-          <h1>Changing the World Takes the HEart</h1>
+          <img src={changing.url} alt=" Changing" />
           <button>{button}</button>
         </div>
       </S.Firstmain>
@@ -156,26 +156,26 @@ export function Main() {
         </div>
       </S.Trailers>
       <S.Buynow>
-        <div class="buy">
-          <img src={buynow.url} alt=" Botão buy now" />
-        </div>
-        <div>
-          <img src={img2.url} alt=" img2" />
-        </div>
-        <div class="standard">
-          <img src={standard.url} alt=" Botão standard" />
-          <S.Quadro>
-            <article>
-              <button>{button3}</button>
-              <button>{button4}</button>
-              <button>{button5}</button>
-              <button>{button6}</button>
-              <button>{button7}</button>
-              <button>{button8}</button>
-            </article>
-          </S.Quadro>
-        </div>
+        <S.Background back={img2.url}>
+          <div class="buynow">
+            <img src={buynow.url} alt=" buynow " />
+          </div>
+          <div class="standard">
+            <img src={standard.url} alt=" standard " />
+          </div>
+        </S.Background>
+        <S.Quadro>
+          <article>
+            <button>{button3}</button>
+            <button>{button4}</button>
+            <button>{button5}</button>
+            <button>{button6}</button>
+            <button>{button7}</button>
+            <button>{button8}</button>
+          </article>
+        </S.Quadro>
       </S.Buynow>
+
       <S.Newsletter>
         <div>
           <h2>{newtitle1}</h2>

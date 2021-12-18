@@ -49,7 +49,7 @@ export const Secondmain = styled.section`
   justify-content: space-between;
 
   padding-top: 100px;
-  height: 100vh;
+  height: 50vh;
   width: 100%;
   align-items: center;
   img {
@@ -58,6 +58,7 @@ export const Secondmain = styled.section`
 `;
 export const Trailers = styled.section`
   width: 100%;
+  padding-top: 100px;
   height: 100vh;
   background-color: black;
   display: flex;
@@ -89,44 +90,51 @@ export const Trailers = styled.section`
   }
 `;
 export const Buynow = styled.section`
+  display: flex;
+  padding-top: 100px;
+  flex-direction: column;
   width: 100%;
-  height: 200vh;
+  height: 170vh;
+  align-items: center;
+`;
+export const Background = styled.section`
+  background-image: url(${(props) => props.back});
+
   display: flex;
   flex-direction: column;
+  width: 75%;
+  height: 110vh;
+  justify-content: start;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-  .buy {
+  .buynow {
+    position: relative;
+    bottom: 75px;
+    right: 110px;
+    height: 18vh;
+
+    width: 32%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    width: 30%;
-    align-items: center;
-    border: solid green;
-    img {
-      width: 80%;
-    }
-  }
-  .standard {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-    align-items: center;
-    border: solid green;
-    img {
-      width: 40%;
-    }
+    justify-content: start;
   }
   img {
-    width: 70%;
-    border: red solid;
+    width: 100%;
   }
-  div {
-    border: blue solid;
+  .standard {
+    position: relative;
+    top: 460px;
+    right: 20px;
+    height: 25vh;
+
+    width: 38%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: start;
+  }
+  img {
     width: 100%;
-    align-items: center;
   }
 `;
 export const Quadro = styled.section`
@@ -134,7 +142,11 @@ export const Quadro = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  border: solid white;
+
+  position: relative;
+  top: 30px;
+  left: 110px;
+  height: 40vh;
 
   transform: rotate(5deg);
   article {
@@ -143,12 +155,12 @@ export const Quadro = styled.section`
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    border: solid red;
-    height: 40vh;
+
+    height: 80vh;
   }
   button {
     border: outset #cfb53b;
-    width: 40%;
+    width: 45%;
     height: 10vh;
     background-color: black;
     font-size: 20px;
@@ -195,6 +207,7 @@ export const Newsletter = styled.section`
 `;
 
 export const Games = styled.section`
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
